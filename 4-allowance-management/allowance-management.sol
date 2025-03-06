@@ -54,5 +54,9 @@ import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contr
 
     }
  
+      
+    function renounceOwnership()public override view onlyOwner {
+        revert("Can't renounce ownership");
+    }
 
  }
